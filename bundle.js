@@ -1,6 +1,23 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   home: () => (/* binding */ home)
+/* harmony export */ });
+const home = () => {
+  console.log("succes");
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -38,7 +55,6 @@ header {
   height: 100vh;
   background-color: aquamarine;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 #content > div {
@@ -52,7 +68,7 @@ footer {
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17828,13 +17844,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
+
 
 
 const content = document.getElementById("content");
 const menu = document.createElement("div");
 content.appendChild(menu);
-const footer = document.createElement("footer");
 content.insertAdjacentHTML("afterend", "<footer></footer>");
+(0,_home_js__WEBPACK_IMPORTED_MODULE_2__.home)();
 })();
 
 /******/ })()
