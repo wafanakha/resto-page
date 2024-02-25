@@ -21,10 +21,38 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
-  background-color: aqua;
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+  margin: 0;
+  padding: 0;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB","sourcesContent":["body {\n  background-color: aqua;\n}\n"],"sourceRoot":""}]);
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content > div {
+  background-color: red;
+  width: 50%;
+  height: 40%;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 20px;
+  width: 100%;
+}
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17806,7 +17834,7 @@ const content = document.getElementById("content");
 const menu = document.createElement("div");
 content.appendChild(menu);
 const footer = document.createElement("footer");
-content.appendChild(footer);
+content.insertAdjacentHTML("afterend", "<footer></footer>");
 })();
 
 /******/ })()
