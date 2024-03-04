@@ -1,3 +1,1 @@
-export const home = () => {
-  console.log("succes");
-};
+export const home = () => {};
