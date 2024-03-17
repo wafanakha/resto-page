@@ -12,7 +12,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   home: () => (/* binding */ home)
 /* harmony export */ });
-const home = () => {};
+const home = () => {
+  const title = document.createElement("div");
+  title.classList.add("title");
+  const menu = document.querySelector(".menu");
+  menu.appendChild(title);
+};
 
 /***/ }),
 
@@ -61,12 +66,16 @@ header {
   height: 40%;
 }
 
+.title {
+  height: 30px;
+  background-color: aqua;
+}
 footer {
   background-color: blueviolet;
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,sBAAsB;AACxB;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\n.title {\n  height: 30px;\n  background-color: aqua;\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17848,6 +17857,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const content = document.getElementById("content");
 const menu = document.createElement("div");
+menu.classList.add("menu");
 content.appendChild(menu);
 content.insertAdjacentHTML("afterend", "<footer></footer>");
 (0,_home_js__WEBPACK_IMPORTED_MODULE_2__.home)();

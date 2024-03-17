@@ -23,6 +23,10 @@ header {
   height: 40%;
 }
 
+.title {
+  height: 30px;
+  background-color: aqua;
+}
 footer {
   background-color: blueviolet;
   height: 20px;
