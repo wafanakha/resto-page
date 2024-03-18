@@ -16,7 +16,10 @@ const home = () => {
   const title = document.createElement("div");
   title.classList.add("title");
   const menu = document.querySelector(".menu");
+  const info = document.createElement("div");
+  info.classList.add("info");
   menu.appendChild(title);
+  menu.appendChild(info);
 };
 
 /***/ }),
@@ -70,12 +73,16 @@ header {
   height: 30px;
   background-color: aqua;
 }
+.info {
+  height: 60px;
+  background-color: rgb(197, 73, 216);
+}
 footer {
   background-color: blueviolet;
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,sBAAsB;AACxB;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\n.title {\n  height: 30px;\n  background-color: aqua;\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,sBAAsB;AACxB;AACA;EACE,YAAY;EACZ,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\n.title {\n  height: 30px;\n  background-color: aqua;\n}\n.info {\n  height: 60px;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
