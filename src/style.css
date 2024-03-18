@@ -27,6 +27,10 @@ header {
   height: 30px;
   background-color: aqua;
 }
+.info {
+  height: 60px;
+  background-color: rgb(197, 73, 216);
+}
 footer {
   background-color: blueviolet;
   height: 20px;
