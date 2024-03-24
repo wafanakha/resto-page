@@ -10,6 +10,9 @@ header {
   background-color: orange;
 }
 nav button {
+  background-color: black;
+  color: orange;
+  padding: 0.5rem;
   margin: 10px 10px 10px 0;
 }
 #content {
@@ -42,10 +45,14 @@ nav button {
 .info {
   height: 60%;
   width: 70%;
-  background-color: rgb(197, 73, 216);
+  border: solid 0.5rem orange;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
 }
 footer {
-  background-color: blueviolet;
+  background-color: orange;
   height: 20px;
   width: 100%;
 }
