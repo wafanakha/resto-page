@@ -15,9 +15,19 @@ __webpack_require__.r(__webpack_exports__);
 const home = () => {
   const title = document.createElement("div");
   title.classList.add("title");
+  const titleName = document.createElement("h2");
+  const titileName_text = document.createTextNode("TITLE HERE");
   const menu = document.querySelector(".menu");
   const info = document.createElement("div");
   info.classList.add("info");
+  const about = document.createElement("div");
+  const aboutparag = document.createElement("p");
+  const aboutparag_text = document.createTextNode("Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci officia, blanditiis a corrupti ducimus deserunt suscipit laboriosam voluptatem nisi?");
+  aboutparag.appendChild(aboutparag_text);
+  about.appendChild(aboutparag);
+  info.appendChild(about);
+  titleName.appendChild(titileName_text);
+  title.appendChild(titleName);
   menu.appendChild(title);
   menu.appendChild(info);
 };
@@ -55,26 +65,36 @@ header {
   justify-content: center;
   background-color: pink;
 }
-
+nav button {
+  margin: 10px 10px 10px 0;
+}
 #content {
   width: 100%;
-  height: 100vh;
   background-color: aquamarine;
   display: flex;
   justify-content: center;
 }
-#content > div {
+.menu {
   background-color: red;
-  width: 50%;
-  height: 40%;
+  width: 60vw;
+  height: 80vh;
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 .title {
-  height: 30px;
+  height: 4rem;
+  width: 60%;
   background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .info {
-  height: 60px;
+  height: 60%;
+  width: 70%;
   background-color: rgb(197, 73, 216);
 }
 footer {
@@ -82,7 +102,7 @@ footer {
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,sBAAsB;AACxB;AACA;EACE,YAAY;EACZ,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\n\n#content {\n  width: 100%;\n  height: 100vh;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n#content > div {\n  background-color: red;\n  width: 50%;\n  height: 40%;\n}\n\n.title {\n  height: 30px;\n  background-color: aqua;\n}\n.info {\n  height: 60px;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\nnav button {\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: red;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  background-color: aqua;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
