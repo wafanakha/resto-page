@@ -17768,6 +17768,17 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/background.jpg":
+/*!****************************!*\
+  !*** ./src/background.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "074f6a1a87c83ba9bc22.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -17861,6 +17872,11 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/dist/";
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -17878,7 +17894,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
+/* harmony import */ var _background_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./background.jpg */ "./src/background.jpg");
+/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
+
 
 
 
@@ -17887,7 +17905,7 @@ const menu = document.createElement("div");
 menu.classList.add("menu");
 content.appendChild(menu);
 content.insertAdjacentHTML("afterend", "<footer></footer>");
-(0,_home_js__WEBPACK_IMPORTED_MODULE_2__.home)();
+(0,_home_js__WEBPACK_IMPORTED_MODULE_3__.home)();
 })();
 
 /******/ })()
