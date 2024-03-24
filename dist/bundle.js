@@ -68,7 +68,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: pink;
+  background-color: orange;
 }
 nav button {
   margin: 10px 10px 10px 0;
@@ -80,7 +80,9 @@ nav button {
   justify-content: center;
 }
 .menu {
-  background-color: red;
+  background-color: black;
+  border: solid 0.5rem orange;
+  border-radius: 5px;
   width: 60vw;
   height: 80vh;
   margin: 5rem 0 5rem 0;
@@ -92,7 +94,8 @@ nav button {
 .title {
   height: 4rem;
   width: 60%;
-  background-color: aqua;
+  border-radius: 5px;
+  background-color: orange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +110,7 @@ footer {
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,yDAAuC;EACvC,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\nnav button {\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-image: url(./background.jpg);\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: red;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  background-color: aqua;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,wBAAwB;AAC1B;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,yDAAuC;EACvC,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,uBAAuB;EACvB,2BAA2B;EAC3B,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,kBAAkB;EAClB,wBAAwB;EACxB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: orange;\n}\nnav button {\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-image: url(./background.jpg);\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: black;\n  border: solid 0.5rem orange;\n  border-radius: 5px;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  border-radius: 5px;\n  background-color: orange;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
