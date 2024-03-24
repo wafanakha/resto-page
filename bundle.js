@@ -71,6 +71,9 @@ header {
   background-color: orange;
 }
 nav button {
+  background-color: black;
+  color: orange;
+  padding: 0.5rem;
   margin: 10px 10px 10px 0;
 }
 #content {
@@ -103,14 +106,18 @@ nav button {
 .info {
   height: 60%;
   width: 70%;
-  background-color: rgb(197, 73, 216);
+  border: solid 0.5rem orange;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
 }
 footer {
-  background-color: blueviolet;
+  background-color: orange;
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,wBAAwB;AAC1B;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,yDAAuC;EACvC,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,uBAAuB;EACvB,2BAA2B;EAC3B,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,kBAAkB;EAClB,wBAAwB;EACxB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: orange;\n}\nnav button {\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-image: url(./background.jpg);\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: black;\n  border: solid 0.5rem orange;\n  border-radius: 5px;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  border-radius: 5px;\n  background-color: orange;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,wBAAwB;AAC1B;AACA;EACE,uBAAuB;EACvB,aAAa;EACb,eAAe;EACf,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,yDAAuC;EACvC,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,uBAAuB;EACvB,2BAA2B;EAC3B,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,kBAAkB;EAClB,wBAAwB;EACxB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,uBAAuB;EACvB,YAAY;EACZ,kBAAkB;EAClB,aAAa;AACf;AACA;EACE,wBAAwB;EACxB,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: orange;\n}\nnav button {\n  background-color: black;\n  color: orange;\n  padding: 0.5rem;\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-image: url(./background.jpg);\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: black;\n  border: solid 0.5rem orange;\n  border-radius: 5px;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  border-radius: 5px;\n  background-color: orange;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  border: solid 0.5rem orange;\n  background-color: black;\n  color: white;\n  border-radius: 5px;\n  padding: 1rem;\n}\nfooter {\n  background-color: orange;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
