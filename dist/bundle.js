@@ -49,10 +49,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./background.jpg */ "./src/background.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
   margin: 0;
@@ -70,7 +75,7 @@ nav button {
 }
 #content {
   width: 100%;
-  background-color: aquamarine;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   display: flex;
   justify-content: center;
 }
@@ -102,7 +107,7 @@ footer {
   height: 20px;
   width: 100%;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\nnav button {\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-color: aquamarine;\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: red;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  background-color: aqua;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;AACA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;AACxB;AACA;EACE,wBAAwB;AAC1B;AACA;EACE,WAAW;EACX,yDAAuC;EACvC,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;EACZ,qBAAqB;EACrB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,6BAA6B;AAC/B;AACA;EACE,YAAY;EACZ,UAAU;EACV,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,WAAW;EACX,UAAU;EACV,mCAAmC;AACrC;AACA;EACE,4BAA4B;EAC5B,YAAY;EACZ,WAAW;AACb","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nheader {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: pink;\n}\nnav button {\n  margin: 10px 10px 10px 0;\n}\n#content {\n  width: 100%;\n  background-image: url(./background.jpg);\n  display: flex;\n  justify-content: center;\n}\n.menu {\n  background-color: red;\n  width: 60vw;\n  height: 80vh;\n  margin: 5rem 0 5rem 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.title {\n  height: 4rem;\n  width: 60%;\n  background-color: aqua;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.info {\n  height: 60%;\n  width: 70%;\n  background-color: rgb(197, 73, 216);\n}\nfooter {\n  background-color: blueviolet;\n  height: 20px;\n  width: 100%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -200,6 +205,42 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -17810,6 +17851,9 @@ module.exports = __webpack_require__.p + "074f6a1a87c83ba9bc22.jpg";
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -17877,6 +17921,32 @@ module.exports = __webpack_require__.p + "074f6a1a87c83ba9bc22.jpg";
 /******/ 		__webpack_require__.p = "/dist/";
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -17894,9 +17964,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _background_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./background.jpg */ "./src/background.jpg");
-/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
-
+/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.js */ "./src/home.js");
 
 
 
@@ -17905,7 +17973,7 @@ const menu = document.createElement("div");
 menu.classList.add("menu");
 content.appendChild(menu);
 content.insertAdjacentHTML("afterend", "<footer></footer>");
-(0,_home_js__WEBPACK_IMPORTED_MODULE_3__.home)();
+(0,_home_js__WEBPACK_IMPORTED_MODULE_2__.home)();
 })();
 
 /******/ })()

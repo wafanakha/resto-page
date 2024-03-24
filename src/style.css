@@ -14,7 +14,7 @@ nav button {
 }
 #content {
   width: 100%;
-  background-color: aquamarine;
+  background-image: url(./background.jpg);
   display: flex;
   justify-content: center;
 }
